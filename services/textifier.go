@@ -17,6 +17,9 @@ func GetService(serviceType string) Textifier {
 	if stdType == "nyanify" {
 		return &Nyanify{}
 	}
+	if stdType == "reversify" {
+		return &Reversify{}
+	}
 	panic("no service was found with given type: " + serviceType)
 }
 
